@@ -28,7 +28,7 @@ The app runs on port 3333 if running locally for developement, and on port 4444 
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone git@github.com:MichaelMcKavanagh/schedule-api.git
 ```
 
 2. setup a .env file
