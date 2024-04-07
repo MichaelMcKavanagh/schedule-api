@@ -1,0 +1,20 @@
+service: nestjs-lambda
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: us-east-1
+  stage: dev
+  environment:
+    NODE_ENV: development
+
+functions:
+  helloWorld:
+    handler: dist/main.handler
+    events:
+      - http:
+          path: /helloWorld
+          method: get
+
+plugins:
+  - serverless-offline
