@@ -54,7 +54,7 @@ npx prisma generate
 npx prisma migrate dev
 ```
 
-6. Start the application:
+6. (optionally) Start the application locally:
 ```bash
 npm run start:dev
 ```
